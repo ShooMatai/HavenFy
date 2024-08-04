@@ -1,0 +1,318 @@
+body {
+  margin: 0%;
+  background-color: #212529;
+  color: #e9ecef;
+  font-family: "Roboto Mono", sans-serif;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  justify-content: space-evenly;
+  width: 90%;
+  height: auto;
+  border: none;
+  border-top: 3px solid #e9ecef;
+  padding: 0%;
+}
+
+legend {
+  text-align: center;
+  font-size: 35px;
+  padding: 0 20px 0 20px;
+  color: #e9ecef;
+}
+
+p {
+  line-height: 200%;
+  font-weight: bold;
+  font-size: 150%;
+  margin: 0.5em 0 1em 0;
+}
+
+p span {
+  color: #f8f9fa;
+}
+
+.reg {
+  box-shadow: 0px 0px 12px 0px #e9ecef;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: right;
+  gap: 7%;
+  padding: 1.4em;
+  height: 35vh;
+}
+
+.forgot {
+  align-self: center;
+}
+
+.signUp {
+  align-self: center;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f9fa;
+  transition: color 0.3s linear;
+}
+
+a:hover {
+  color: #ced4da;
+}
+
+input[type="submit"] {
+  align-self: center;
+  background-color: #e9ecef;
+  color: #212529;
+  font-weight: 500;
+  font-size: 100%;
+  border-radius: 5px;
+  border: none;
+  transition: box-shadow 0.3s linear, background-color 0.3s linear, color 0.3s linear;
+  width: 50%;
+  height: 9%;
+}
+
+input[type="submit"]:hover {
+  box-shadow: 0px 0px 12px 0px #e9ecef;
+  background-color: #ced4da;
+  color: #495057;
+}
+
+input[type="password"] {
+  margin-bottom: 8px;
+}
+
+input[type="email"],
+input[type="password"] {
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #f8f9fa;
+  transition: background-color 0.5s linear, color 0.5s linear, border-radius 0.5s linear;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+    background-color: #ced4da;
+    color: #495057;
+    border-radius: 5px;
+  }
+
+input {
+  color: #e9ecef;
+}
+
+label {
+  color: #e9ecef;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+}
+
+footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  padding-top: 4vh;
+  margin-bottom: 4vh;
+}
+
+footer .container .logo_facebook {
+  width: 20px;
+  height: auto;
+  transition: transform 0.8s 0.2s linear;
+}
+
+footer .container .logo_facebook:hover {
+  transform: scale(1.5);
+}
+
+footer .container .logo_x {
+  width: 20px;
+  height: auto;
+  transition: transform 0.8s 0.2s linear;
+}
+
+footer .container .logo_x:hover {
+  transform: scale(1.5);
+}
+
+footer .container .logo_instagram {
+  width: 20px;
+  height: auto;
+  transition: transform 0.8s 0.2s linear;
+}
+
+footer .container .logo_instagram:hover {
+  transform: scale(1.5);
+}
+
+.logo_x img {
+  height: 24px;
+  width: 24px;
+}
+
+/* height limit */
+@media (max-height: 625px) {
+  .reg {
+    height: 220px;
+  }
+}
+
+/* tablet */
+@media (min-width: 500px) and (max-width: 768px) {
+  body {
+    font-size: 1.25em;
+  }
+
+  fieldset {
+    width: 60%;
+  }
+
+  legend {
+    font-size: 35px;
+  }
+
+  p {
+    margin-top: 0.35em;
+  }
+
+  .reg {
+    height: 60vw;
+    padding: 1.4em;
+  }
+
+  input[type="submit"] {
+    height: 8%;
+  }
+
+  footer .container {
+    margin-bottom: 2vw;
+  }
+
+  footer .container .logo_facebook img {
+    width: 30px;
+    height: 30px;
+  }
+
+  footer .container .logo_instagram img {
+    width: 30px;
+    height: 30px;
+  }
+
+  footer .container .logo_x img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* PC */
+@media (min-width: 769px) and (max-width: 1440px) {
+  body {
+    font-size: 1.5em;
+  }
+
+  fieldset {
+    width: 60%;
+  }
+
+  legend {
+    font-size: 35px;
+  }
+
+  p {
+    margin-top: 0.35em;
+  }
+
+  .reg {
+    height: 35vw;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  input[type="submit"] {
+    width: 30%;
+    height: 11%;
+  }
+
+  footer .container {
+    margin-bottom: 2vw;
+  }
+
+  footer .container .logo_facebook img {
+    width: 30px;
+    height: 30px;
+  }
+
+  footer .container .logo_instagram img {
+    width: 30px;
+    height: 30px;
+  }
+
+  footer .container .logo_x img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* PC L */
+@media (min-width: 1441px) {
+  body {
+    font-size: 1.5em;
+  }
+
+  fieldset {
+    width: 40%;
+  }
+
+  legend {
+    font-size: 45px;
+  }
+
+  p {
+    margin-top: 0.25em;
+  }
+
+  .reg {
+    height: 24vw;
+    padding-left: 4em;
+    padding-right: 4em;
+  }
+
+  input[type="submit"] {
+    width: 30%;
+    height: 8%;
+  }
+
+  footer .container {
+    margin-bottom: 2vw;
+  }
+
+  footer .container .logo_facebook img {
+    width: 35px;
+    height: 35px;
+  }
+
+  footer .container .logo_instagram img {
+    width: 35px;
+    height: 35px;
+  }
+
+  footer .container .logo_x img {
+    width: 35px;
+    height: 35px;
+  }
+}
