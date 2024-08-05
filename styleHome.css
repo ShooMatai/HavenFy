@@ -122,6 +122,10 @@ main {
   flex-wrap: wrap;
 }
 
+main ul {
+  display: none;
+}
+
 main h1 {
   font-size: 30px;
   font-weight: 500;
@@ -332,6 +336,50 @@ footer .container .logo_instagram:hover {
     display: flex;
     justify-content: space-between;
   }
+
+  main {
+    margin-bottom: 0px;
+  }
+
+  main .popular h1 {
+    display: none;
+  }
+
+  main .new h1 {
+    display: none;
+  }
+
+  main ul {
+    position: relative;
+    display: inline-block;
+    margin: 5vh auto 5vh auto;
+  }
+
+  main ul li {
+    cursor: pointer;
+  }
+
+  main ul li:first-child {
+    margin-bottom: 5px;
+  }
+
+  main ul li:last-child {
+    position: absolute;
+  }
+
+  main ul li h1 {
+    margin: 0;
+    width: 126px;
+  }
+
+  main .new {
+    display: none;
+  }
+
+  .new h2 {
+    border-right: #e9ecef solid;
+    padding-right: 5px;
+  }
 }
 
 /* PC big*/
@@ -356,5 +404,53 @@ footer .container .logo_instagram:hover {
 
   .opened {
     width: 300px;
+  }
+
+  main {
+    margin-bottom: 0px;
+  }
+
+  main .popular h1 {
+    display: none;
+  }
+
+  main .new h1 {
+    display: none;
+  }
+
+  main ul {
+    position: relative;
+    display: inline-block;
+    margin: 5vh auto 5vh auto;
+  }
+
+  main ul li {
+    cursor: pointer;
+  }
+
+  main ul li:first-child {
+    margin-bottom: 5px;
+  }
+
+  main ul li:last-child {
+    position: absolute;
+  }
+
+  main ul li h1 {
+    margin: 0;
+    width: 126px;
+  }
+
+  main .new {
+    display: none;
+  }
+
+  .new h2 {
+    border-right: #e9ecef solid;
+    padding-right: 5px;
+  }
+
+  .popular {
+    padding: 0px 250px;
   }
 }
